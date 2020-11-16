@@ -1,6 +1,6 @@
 ## Exercises
----
-1.[RegexOne] (https://regexone.com/)
+
+1. [RegexOne](https://regexone.com/)
 
 2.Find the number of words (in /usr/share/dict/words) that contain at least three as and don’t have a 's ending. 
 
