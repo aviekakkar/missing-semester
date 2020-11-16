@@ -14,7 +14,7 @@
 
 	```cat words | awk '$1 ~ /(.*[aA]){3}.*[^sS]$/ {print $1}' | sed -E 's/.*(..)/\1/' | sort | uniq -c | sort -k1,1 | tail -n3```
 
-	__ PS: the first `sort` must preceed `uniq -c` as uniq only compares _adjacent lines_.__
+__ PS: the first `sort` must preceed `uniq -c` as uniq only compares _adjacent lines_.__
 
 3. To do in-place substitution it is quite tempting to do something like sed s/REGEX/SUBSTITUTION/ input.txt > input.txt. However this is a bad idea, why? Is this particular to sed? Use man sed to find out how to accomplish this.
 
