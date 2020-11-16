@@ -24,8 +24,8 @@ _PS: the first `sort` must preceed `uniq -c` as uniq only compares __adjacent li
 
 5. To do in-place substitution it is quite tempting to do something like sed s/REGEX/SUBSTITUTION/ input.txt > input.txt. However this is a bad idea, why? Is this particular to sed? Use man sed to find out how to accomplish this.
 
-This is a bad idea cause as one risks corruption or partial content in situations where disk space is exhausted, etc. 
+	This is a bad idea as one risks corruption or partial content in situations where disk space is exhausted, etc. 
 
-To accomplish the same use the `-I or -i` extension making sure to provide a non-zero extension. (e.g, sed -i .md `s/REGEX/SUBSTITUTION` ) 
+	To accomplish the same use the `-I or -i` extension making sure to provide a non-zero extension. (e.g, sed -i .md `s/REGEX/SUBSTITUTION` ) 
 
 
